@@ -10,8 +10,8 @@ class Detection(BaseCamera):
         super().__init__(source)
 
         #Load the pretrained caffe models #D:\Windows\Downloads\codeathonBackend\camera\\
-        self.net = cv2.dnn.readNetFromCaffe("camera\\faceData\deploy.prototxt", "camera\\faceData\\res10_300x300_ssd_iter_140000.caffemodel")
-        self.maskNet = cv2.dnn.readNetFromCaffe("camera\maskData\deploy.prototxt", "camera\maskData\\face_mask.caffemodel")
+        self.net = cv2.dnn.readNetFromCaffe(".\camera\\faceData\deploy.prototxt", ".\camera\\faceData\\res10_300x300_ssd_iter_140000.caffemodel")
+        self.maskNet = cv2.dnn.readNetFromCaffe(".\camera\maskData\deploy.prototxt", ".\camera\maskData\\face_mask.caffemodel")
 
         #Color constants
         self.red = (0, 0, 255)
